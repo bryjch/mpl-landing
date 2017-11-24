@@ -28,16 +28,32 @@ body {
 }
 
 .flex-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
 .flex-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -57,18 +73,24 @@ body {
   pointer-events: all;
   position: relative;
   background-color: transparent;
+  -webkit-transition: 0.5s ease background-color;
+  -o-transition: 0.5s ease background-color;
   transition: 0.5s ease background-color;
 }
 
 .region img.logo {
   max-width: calc(100% - 2rem);
   margin: 1rem;
+  -webkit-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
   transition: 0.5s ease all;
   position: relative;
   z-index: 10;
 }
 
 .region img.logo:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
@@ -94,9 +116,14 @@ body {
 
 #sponsors {
   pointer-events: all;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
+  background: -webkit-linear-gradient(bottom, black, transparent);
+  background: -o-linear-gradient(bottom, black, transparent);
   background: linear-gradient(to top, black, transparent);
   width: 100%;
   min-height: 150px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 

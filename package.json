@@ -1,0 +1,19 @@
+{
+  "name": "mpl-landing",
+  "version": "1.0.0",
+  "description": "Landing page for MPL to select different regions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryjch/mpl-landing.git"
+  },
+  "author": "Bryan Choo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryjch/mpl-landing/issues"
+  },
+  "homepage": "https://github.com/bryjch/mpl-landing#readme"
+}
